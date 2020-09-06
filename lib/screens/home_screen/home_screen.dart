@@ -1,3 +1,4 @@
+import 'package:asos/screens/home_screen/appbar.dart';
 import 'package:asos/screens/home_screen/drawer.dart';
 import 'package:asos/utils/colors.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,8 @@ class _HomeScreenState extends State<HomeScreen>
     return SafeArea(
       child: Scaffold(
         key: _scaffoldKey,
-        appBar: _buildAppBar(context),
+        // appBar: _buildAppBar(context),
+        appBar: MyAppBar(controller: _controller, scaffoldKey: _scaffoldKey),
         drawer: HomeDrawer(),
         body: _body(),
       ),
