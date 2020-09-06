@@ -1,12 +1,12 @@
 import 'package:asos/screens/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
-class AsosSplashScreen extends StatefulWidget {
+class SplashScreen extends StatefulWidget {
   @override
-  _AsosSplashScreenState createState() => _AsosSplashScreenState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _AsosSplashScreenState extends State<AsosSplashScreen> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     openHomeScreen();
@@ -20,7 +20,7 @@ class _AsosSplashScreenState extends State<AsosSplashScreen> {
       () => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (ctx) => AsosHomeScreen(),
+          builder: (ctx) => HomeScreen(),
         ),
       ),
     );
