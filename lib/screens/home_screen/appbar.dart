@@ -60,7 +60,7 @@ class _MyAppBarState extends State<MyAppBar>
     var fav = IconButton(onPressed: () {}, icon: favIcon);
     var search = IconButton(onPressed: () {}, icon: searchIcon);
 
-    var tabTextStyle = TextStyle(color: Colors.black);
+    var tabTextStyle = TextStyle(color: Colors.black,fontWeight: FontWeight.bold);
     var homeTab = Tab(child: Text('HOME', style: tabTextStyle));
     var catTab = Tab(child: Text('CATEGORIES', style: tabTextStyle));
     var newTab = Tab(child: Text('NEW IN', style: tabTextStyle));
